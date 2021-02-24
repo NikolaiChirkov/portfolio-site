@@ -1,9 +1,12 @@
+import Logo from '../../resources/svg/portfolio.svg';
+import './Header.scss';
+
 const Header = () => {
     
   return (
     <div className="header">
-      <img src="logo192.png" alt="portfolio logo"/>
-      <h1>Title</h1>
+      <img className="header__image" src={Logo} alt="portfolio logo"/>
+      <h1 className="header__title">Nikolai's portfolio</h1>
     </div>
   );
     
