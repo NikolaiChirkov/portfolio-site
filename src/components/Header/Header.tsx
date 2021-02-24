@@ -1,5 +1,5 @@
 import Logo from '../../resources/svg/portfolio.svg';
-import './Header.scss';
+import '../../resources/styles/Header.scss';
 
 const Header = () => {
     

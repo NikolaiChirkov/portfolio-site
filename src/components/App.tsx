@@ -1,5 +1,5 @@
 import Header from './Header/Header';
-import './App.scss';
+import '../resources/styles/App.scss';
 
 const App = () => {
   return (
