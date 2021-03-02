@@ -1,10 +1,10 @@
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import Home from './Home/Home';
-import Projects from './Projects/Projects';
+import Programming from './Programming/Programming';
 import '../resources/styles/App.scss';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className="app">
       <Header />
@@ -12,12 +12,12 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/projects">
-          <Projects />
+        <Route path="/programming">
+          <Programming />
         </Route>
       </Switch>
     </div>
-  )
-}
+  );
+};
 
 export default App;

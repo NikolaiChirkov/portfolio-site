@@ -2,8 +2,7 @@ import Navbar from './Navbar/Navbar';
 import Logo from '../../resources/svg/portfolio.svg';
 import '../../resources/styles/Header.scss';
 
-const Header = () => {
-    
+const Header = (): JSX.Element => {
   return (
     <div className="header">
       <img className="header__image" src={Logo} alt="portfolio logo"/>
@@ -11,7 +10,6 @@ const Header = () => {
       <Navbar />
     </div>
   );
-    
-}
+};
 
 export default Header;
