@@ -4,10 +4,14 @@ import './Navbar.scss';
 const Navbar = (): JSX.Element => (
   <ul className="navbar">
     <li className="navbar__link">
-      <NavLink to="/">Home</NavLink>
+      <NavLink exact activeClassName="link__active" to="/">
+        Home
+      </NavLink>
     </li>
     <li className="navbar__link">
-      <NavLink to="/programming">Programming</NavLink>
+      <NavLink activeClassName="link__active" to="/programming">
+        Programming
+      </NavLink>
     </li>
   </ul>
 );

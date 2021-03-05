@@ -16,7 +16,9 @@
     width: auto;
     height: 100%;
 
-    padding: 0 5px;
+    box-sizing: border-box;
+
+    padding: 0 10px;
 
     list-style: none;
 
@@ -28,6 +30,16 @@
     a {
       text-decoration: none;
       color: black;
+    }
+
+    .link__active {
+      display: flex;
+
+      align-items: center;
+
+      height: 100%;
+
+      border-bottom: 5px solid #127006;
     }
 
     @keyframes link-hover {
