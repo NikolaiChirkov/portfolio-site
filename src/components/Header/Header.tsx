@@ -1,6 +1,6 @@
 import Logo from '../../resources/svg/portfolio.svg';
 import Navbar from './Navbar/Navbar';
-import '../../resources/styles/Header/Header.scss';
+import './Header.scss';
 
 const Header = (): JSX.Element => (
   <div className="header">

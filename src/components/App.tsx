@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import Home from './Home/Home';
 import Programming from './Programming/Programming';
-import '../resources/styles/App.scss';
+import './App.scss';
 
 const App = (): JSX.Element => (
   <div className="app">
