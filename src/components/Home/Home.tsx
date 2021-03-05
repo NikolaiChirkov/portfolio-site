@@ -1,7 +1,11 @@
+import Section from './Section/Section';
+import './Home.scss';
+
 const Home = (): JSX.Element => (
-  <section className="home">
-    <h1>Home</h1>
-  </section>
+  <main className="home">
+    <Section cls="w-bg block" />
+    <Section cls="g-bg block" />
+  </main>
 );
 
 export default Home;
