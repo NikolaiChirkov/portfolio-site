@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header/Header';
+import Header from './Common/Header/Header';
 import Home from './Home/Home';
 import Programming from './Programming/Programming';
 import './App.scss';

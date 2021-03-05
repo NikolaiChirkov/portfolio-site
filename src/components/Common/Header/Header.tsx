@@ -1,4 +1,4 @@
-import Logo from '../../resources/svg/portfolio.svg';
+import Logo from '../../../resources/svg/portfolio.svg';
 import Navbar from './Navbar/Navbar';
 import './Header.scss';
 
