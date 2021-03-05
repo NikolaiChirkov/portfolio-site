@@ -1,12 +1,21 @@
+import { Switch, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import '../resources/styles/App.scss';
+import Home from './Home/Home';
+import Programming from './Programming/Programming';
+import './App.scss';
 
-const App = () => {
-  return (
-    <div className="app">
-      <Header />
-    </div>
-  )
-}
+const App = (): JSX.Element => (
+  <div className="app">
+    <Header />
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/programming">
+        <Programming />
+      </Route>
+    </Switch>
+  </div>
+);
 
 export default App;
