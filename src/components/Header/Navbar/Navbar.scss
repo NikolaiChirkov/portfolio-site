@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  height: 100%;
+
+  .navbar__link {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 100%;
+
+    padding: 0 5px;
+
+    list-style: none;
+
+    &:hover {
+      animation-duration: 1s;
+      animation-name: link-hover;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    @keyframes link-hover {
+      from {
+        background-color: rgba(0, 0, 0, 0.0);
+      }
+    
+      to {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

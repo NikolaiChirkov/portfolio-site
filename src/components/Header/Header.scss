@@ -3,7 +3,7 @@
 
   flex-flow: row nowrap;
 
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 
   width: 100%;
@@ -11,17 +11,29 @@
 
   box-shadow: 0 0 5px 0 #171615;
 
-  .header__image {
-    width: 40px;
-    height: 40px;
+  .header__face {
+    display: flex;
 
-    margin-right: 20px;
-    margin-left: 10px;
-  }
+    flex-flow: row nowrap;
 
-  .header__title {
+    justify-content: flex-start;
+    align-items: center;
+
     width: auto;
+    height: auto;
 
-    font-size: 26px;
+    .header__logo {
+      width: 40px;
+      height: 40px;
+  
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  
+    .header__title {
+      width: auto;
+  
+      font-size: 26px;
+    }
   }
 }
