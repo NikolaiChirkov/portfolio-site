@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  width: auto;
+  height: 50px;
+
+  background-color: white;
+
+  box-shadow: 0 0 5px 0 #171615;
+}
