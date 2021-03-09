@@ -9,7 +9,7 @@ const Navbar = (): JSX.Element => (
       </NavLink>
     </li>
     <li className="navbar__link">
-      <NavLink activeClassName="link__active" to="/programming">
+      <NavLink activeClassName="link__active" to="/projects">
         Проекты
       </NavLink>
     </li>
