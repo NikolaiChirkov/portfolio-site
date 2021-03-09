@@ -29,6 +29,10 @@
     &:hover {
       animation-duration: 1s;
       animation-name: link-hover;
+
+      background-color: rgba(0, 0, 0, 0.1);
+
+      cursor: pointer;
     }
 
     a {
