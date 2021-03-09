@@ -2,15 +2,12 @@ import './Section.scss';
 
 interface ISection {
   cls: string;
+  text: string;
+  img?: string;
 }
 
-const Section = ({ cls }: ISection): JSX.Element => (
-  <section className={cls}>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit.Quae, nisi nihil
-    quibusdam, quia exercitationem dolorem, consectetur beatae soluta
-    perspiciatis eveniet nam voluptas voluptate! Modi officia esse iure
-    temporibus id inventore.
-  </section>
+const Section = ({ cls, text }: ISection): JSX.Element => (
+  <section className={cls}>{text}</section>
 );
 
 export default Section;

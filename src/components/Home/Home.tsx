@@ -1,10 +1,12 @@
 import Section from '../Common/Section/Section';
+import data from './data';
 import './Home.scss';
 
 const Home = (): JSX.Element => (
   <main className="home">
-    <Section cls="w-bg block" />
-    <Section cls="g-bg block" />
+    {data.map((section) => (
+      <Section {...section} />
+    ))}
   </main>
 );
 
