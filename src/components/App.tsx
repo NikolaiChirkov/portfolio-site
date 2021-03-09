@@ -1,7 +1,8 @@
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header/Header';
+import Header from './Common/Header/Header';
 import Home from './Home/Home';
-import Programming from './Programming/Programming';
+import Projects from './Projects/Projects';
+import './reset.scss';
 import './App.scss';
 
 const App = (): JSX.Element => (
@@ -11,8 +12,8 @@ const App = (): JSX.Element => (
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/programming">
-        <Programming />
+      <Route path="/projects">
+        <Projects />
       </Route>
     </Switch>
   </div>

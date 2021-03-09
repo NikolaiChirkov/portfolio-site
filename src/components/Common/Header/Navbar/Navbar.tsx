@@ -5,12 +5,12 @@ const Navbar = (): JSX.Element => (
   <ul className="navbar">
     <li className="navbar__link">
       <NavLink exact activeClassName="link__active" to="/">
-        Home
+        Главная
       </NavLink>
     </li>
     <li className="navbar__link">
-      <NavLink activeClassName="link__active" to="/programming">
-        Programming
+      <NavLink activeClassName="link__active" to="/projects">
+        Проекты
       </NavLink>
     </li>
   </ul>

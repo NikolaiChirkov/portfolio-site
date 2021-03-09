@@ -7,6 +7,8 @@
   width: auto;
   height: 100%;
 
+  margin-right: 10px;
+
   .navbar__link {
     display: flex;
 
@@ -19,6 +21,8 @@
     box-sizing: border-box;
 
     padding: 0 10px;
+
+    font-size: 0.8em;
 
     list-style: none;
 
@@ -39,7 +43,13 @@
 
       height: 100%;
 
-      border-bottom: 5px solid #127006;
+      box-sizing: border-box;
+
+      border-bottom: 5px solid #1d75b8;
+    }
+
+    @media (min-width: 544px) {
+      font-size: 1em;
     }
 
     @keyframes link-hover {

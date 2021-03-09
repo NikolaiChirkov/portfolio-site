@@ -1,8 +1,13 @@
+import Section from '../Common/Section/Section';
+import data from './data';
+import './Home.scss';
+
 const Home = (): JSX.Element => (
-  <section className="home">
-    <h1>Home</h1>
-    <p>Work in progress</p>
-  </section>
+  <main className="home">
+    {data.map((section) => (
+      <Section {...section} />
+    ))}
+  </main>
 );
 
 export default Home;
