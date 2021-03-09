@@ -1,4 +1,4 @@
-import Section from './Section/Section';
+import Section from '../Common/Section/Section';
 import './Home.scss';
 
 const Home = (): JSX.Element => (
