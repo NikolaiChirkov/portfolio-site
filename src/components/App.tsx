@@ -2,6 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Common/Header/Header';
 import Home from './Home/Home';
 import Projects from './Projects/Projects';
+import Footer from './Common/Footer/Footer';
 import './reset.scss';
 import './App.scss';
 
@@ -16,6 +17,7 @@ const App = (): JSX.Element => (
         <Projects />
       </Route>
     </Switch>
+    <Footer />
   </div>
 );
 
