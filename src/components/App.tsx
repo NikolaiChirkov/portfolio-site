@@ -9,14 +9,16 @@ import './App.scss';
 const App = (): JSX.Element => (
   <div className="app">
     <Header />
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/projects">
-        <Projects />
-      </Route>
-    </Switch>
+    <main className="page">
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+      </Switch>
+    </main>
     <Footer />
   </div>
 );
