@@ -1,0 +1,73 @@
+@import '../../resources/scss/Variables.scss';
+
+
+.home {
+  width: 100%;
+  height: auto;
+
+  .home_intr {
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(to right top, #155484, #0e3858);
+
+    color: map-get($c-t, wh);
+
+    .intr_title {
+      font-size: 2em;
+    }
+
+    .intr_subtitle {
+      padding-top: 15px;
+
+      font-size: 1.25em;
+      font-style: italic;
+    }
+  }
+
+  .home_overview {
+    display: flex;
+
+    flex-flow: column nowrap;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    margin: 5em 0;
+
+    .overview_header {
+      display: flex;
+
+      flex-flow: row nowrap;
+
+      padding: 0 10px 10px 10px;
+
+      border-bottom: 2px solid map-get($c-t, bla);
+
+      font-size: 2em;
+      color: map-get($c-t, bl);
+    }
+
+    .overview_container {
+      display: flex;
+
+      flex-flow: row wrap;
+
+      justify-content: space-around;
+
+      width: 100%;
+      height: auto;
+
+      margin: 3em 0;
+    }
+  }
+}

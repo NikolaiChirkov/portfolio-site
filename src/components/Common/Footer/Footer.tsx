@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => (
         target="_blank"
       >
         <img className="link_img" src={HHLogo} alt="hh.ru logo" />
-        <caption className="link_caption">hh.ru</caption>
+        <p className="link_caption">hh.ru</p>
       </a>
       <a
         className="links_link"
@@ -19,7 +19,7 @@ const Footer = (): JSX.Element => (
         target="_blank"
       >
         <img className="link_img" src={GitHubLogo} alt="github logo" />
-        <caption className="link_caption">GitHub</caption>
+        <p className="link_caption">GitHub</p>
       </a>
     </div>
   </footer>
