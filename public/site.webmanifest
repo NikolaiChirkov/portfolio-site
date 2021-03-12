@@ -1,6 +1,6 @@
 {
-    "name": "Portfolio",
-    "short_name": "Nikolai's Portfolio site",
+    "name": "Портфолио Николая",
+    "short_name": "Портфолио",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
