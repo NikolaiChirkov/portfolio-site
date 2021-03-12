@@ -1,0 +1,28 @@
+@import '../../../../resources/scss/Variables.scss';
+
+.project-card {
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 420px;
+  height: auto;
+
+  padding: 10px 0;
+
+  background-color: map-get($c-bg, def-dark);
+
+  .project-card_img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .project-card_caption {
+    width: auto;
+
+    padding: 10px 0;
+  }
+}

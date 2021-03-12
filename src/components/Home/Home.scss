@@ -35,9 +35,9 @@
   .home_overview {
     display: flex;
 
-    flex-direction: column nowrap;
+    flex-flow: column nowrap;
 
-    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 100vh;
@@ -45,12 +45,29 @@
     margin: 5em 0;
 
     .overview_header {
-      padding: 0 10px;
+      display: flex;
+
+      flex-flow: row nowrap;
+
+      padding: 0 10px 10px 10px;
+
+      border-bottom: 2px solid map-get($c-t, bla);
 
       font-size: 2em;
-      text-decoration: underline;
-
       color: map-get($c-t, bl);
+    }
+
+    .overview_container {
+      display: flex;
+
+      flex-flow: row wrap;
+
+      justify-content: space-around;
+
+      width: 100%;
+      height: auto;
+
+      margin: 3em 0;
     }
   }
 }
