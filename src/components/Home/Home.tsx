@@ -19,7 +19,7 @@ const Home = (): JSX.Element => (
         />
         <ProjectCard
           caption="n-chirkov.netlify.app"
-          imgSrc="https://i.imgur.com/aSot8GAl.png"
+          imgSrc="https://imgur.com/1SdipZxl.png"
           lnk="#"
         />
       </div>
