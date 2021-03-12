@@ -1,15 +1,17 @@
+@import '../resources/scss/Variables.scss';
+
 .app {
   width: 100%;
-  height: 100vh;
+  height: auto;
 
   max-width: 100%;
 
-  background-color: #e4f2e8;
+  background-color: map-get($c-bg, def);
 
   .page {
     width: 100%;
-    height: 100vh;
+    height: auto;
 
-    background-color: #e4f2e8;
+    background-color: map-get($c-bg, def);
   }
 }
