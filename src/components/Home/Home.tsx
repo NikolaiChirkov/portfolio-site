@@ -1,6 +1,4 @@
-// import Section from '../Common/Section/Section';
-// import data from './data';
-import ProjectCard from './partials/ProjectCard/ProjectCard';
+import ProjectCard from './ProjectCard/ProjectCard';
 import './Home.scss';
 
 const Home = (): JSX.Element => (
@@ -18,11 +16,20 @@ const Home = (): JSX.Element => (
           lnk="https://specmax.ru/"
         />
         <ProjectCard
+          caption="glarimac.ru"
+          imgSrc="https://imgur.com/1LKkSjMl.png"
+          lnk="https://glarimac.ru/"
+        />
+        <ProjectCard
           caption="n-chirkov.netlify.app"
           imgSrc="https://imgur.com/1SdipZxl.png"
           lnk="#"
         />
       </div>
+    </section>
+    <section id="technology" className="technology">
+      <h1>Известные технологии:</h1>
+      <div className="technology__container"></div>
     </section>
   </main>
 );

@@ -12,6 +12,16 @@ const Navbar = (): JSX.Element => (
         Проекты
       </a>
     </li>
+    <li className="navbar__link">
+      <a className="navbar__link-a" href="#contacts">
+        Технологии
+      </a>
+    </li>
+    <li className="navbar__link">
+      <a className="navbar__link-a" href="#contacts">
+        Контакты
+      </a>
+    </li>
   </ul>
 );
 
