@@ -1,0 +1,22 @@
+.links__link {
+  display: flex;
+
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0 1em;
+
+  .link__img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .link__caption {
+    padding-left: 0.5em;
+
+    font-size: 1.2em;
+    color: black;
+  }
+}

@@ -13,7 +13,7 @@ const Navbar = (): JSX.Element => (
       </a>
     </li>
     <li className="navbar__link">
-      <a className="navbar__link-a" href="#contacts">
+      <a className="navbar__link-a" href="#technology">
         Технологии
       </a>
     </li>
