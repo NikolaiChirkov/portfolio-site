@@ -1,5 +1,5 @@
-import HHLogo from '../../../resources/svg/hh-ru.svg';
-import GitHubLogo from '../../../resources/svg/github.svg';
+import HHLogo from '../../resources/svg/hh-ru.svg';
+import GitHubLogo from '../../resources/svg/github.svg';
 import './Footer.scss';
 
 const Footer = (): JSX.Element => (

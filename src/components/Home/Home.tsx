@@ -5,11 +5,11 @@ import './Home.scss';
 
 const Home = (): JSX.Element => (
   <main className="home">
-    <section className="home_intr">
+    <section id="main" className="home_intr">
       <h2 className="intr_title">Привет, я Николай</h2>
       <h3 className="intr_subtitle">JavaScript разработчик</h3>
     </section>
-    <section className="home_overview">
+    <section id="overview" className="home_overview">
       <h2 className="overview_header">Проекты, в которых учавствовал</h2>
       <div className="overview_container">
         <ProjectCard
