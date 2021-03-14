@@ -20,6 +20,9 @@ const Home = (): JSX.Element => (
           imgSrc="https://imgur.com/1LKkSjMl.png"
           lnk="https://glarimac.ru/"
         />
+      </div>
+      <h2 className="overview__header">Личные проекты</h2>
+      <div className="overview__container">
         <ProjectCard
           caption="n-chirkov.netlify.app"
           imgSrc="https://imgur.com/1SdipZxl.png"
