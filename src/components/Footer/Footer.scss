@@ -6,7 +6,7 @@
 
   width: 100%;
 
-  padding: 4em 0;
+  padding: 1em 0;
 
   background-color: white;
 
@@ -24,13 +24,20 @@
     .links__container {
       display: flex;
   
-      flex-flow: row nowrap;
+      flex-flow: column nowrap;
   
       justify-content: center;
       align-items: flex-start;
 
       margin-top: 3em;
+
+      @media (min-width: 700px) {
+        flex-flow: row nowrap;
+      }
     }
   }
 
+  @media (min-width: 700px) {
+    padding: 4em 0;
+  }
 }

@@ -8,8 +8,8 @@ interface IProjectCard {
 
 const ProjectCard = ({ imgSrc, caption, lnk }: IProjectCard): JSX.Element => (
   <a className="project-card" href={lnk} target="_blank">
-    <img className="project-card_img" src={imgSrc} alt="project image" />
-    <p className="project-card_caption">{caption}</p>
+    <img className="project-card__img" src={imgSrc} alt="project image" />
+    <p className="project-card__caption">{caption}</p>
   </a>
 );
 

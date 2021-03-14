@@ -26,13 +26,26 @@
 
     list-style: none;
 
+    animation-name: link-hover-reverse;
+    animation-duration: 0.5s;
+
     &:hover {
-      animation-duration: 1s;
+      animation-duration: 0.5s;
       animation-name: link-hover;
 
       background-color: rgba(0, 0, 0, 0.1);
 
       cursor: pointer;
+
+      @keyframes link-hover {
+        from {
+          background-color: rgba(0, 0, 0, 0.0);
+        }
+      
+        to {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
     }
 
     .navbar__link-a {
@@ -52,13 +65,13 @@
       font-size: 1em;
     }
 
-    @keyframes link-hover {
+    @keyframes link-hover-reverse {
       from {
-        background-color: rgba(0, 0, 0, 0.0);
+        background-color: rgba(0, 0, 0, 0.1);
       }
     
       to {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.0);
       }
     }
   }

@@ -5,7 +5,7 @@
   width: 100%;
   height: auto;
 
-  .home_intr {
+  .home__intr {
     display: flex;
 
     flex-flow: column nowrap;
@@ -20,11 +20,11 @@
 
     color: map-get($c-t, wh);
 
-    .intr_title {
+    .intr__title {
       font-size: 2em;
     }
 
-    .intr_subtitle {
+    .intr__subtitle {
       padding-top: 15px;
 
       font-size: 1.25em;
@@ -32,7 +32,7 @@
     }
   }
 
-  .home_overview {
+  .home__overview {
     display: flex;
 
     flex-flow: column nowrap;
@@ -44,7 +44,7 @@
 
     margin: 5em 0;
 
-    .overview_header {
+    .overview__header {
       display: flex;
 
       flex-flow: row nowrap;
@@ -57,7 +57,7 @@
       color: map-get($c-t, bl);
     }
 
-    .overview_container {
+    .overview__container {
       display: flex;
 
       flex-flow: row wrap;
@@ -69,5 +69,9 @@
 
       margin: 3em 0;
     }
+  }
+
+  .home__technology {
+
   }
 }
