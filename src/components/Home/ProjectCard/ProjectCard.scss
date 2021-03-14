@@ -19,17 +19,56 @@
 
   box-shadow: 0 0 5px 0 black;
 
-  .project-card_img {
+  transform: scale(1);
+
+  animation-name: card-scale-reverse;
+  animation-duration: 0.3s;
+
+  &:hover {
+    animation-name: card-scale;
+    animation-duration: 0.3s;
+
+    box-shadow: 0 0 8px 0 black;
+
+    transform: scale(1.05);
+
+    cursor: pointer;
+
+    @keyframes card-scale {
+      from {
+        transform: scale(1);
+        box-shadow: 0 0 5px 0 black;
+
+      }
+      to {
+        transform: scale(1.05);
+        box-shadow: 0 0 8px 0 black;
+      }
+    }
+  }
+
+  .project-card__img {
     width: 400px;
     height: 200px;
   }
 
-  .project-card_caption {
+  .project-card__caption {
     width: auto;
 
     padding: 15px 0 5px 0;
 
     font-size: 1.2em;
     color: map-get($c-t, bla);
+  }
+
+  @keyframes card-scale-reverse {
+    from {
+      transform: scale(1.05);
+      box-shadow: 0 0 8px 0 black;
+    }
+    to {
+      transform: scale(1);
+      box-shadow: 0 0 5px 0 black;
+    }
   }
 }

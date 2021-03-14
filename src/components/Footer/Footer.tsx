@@ -8,7 +8,7 @@ import './Footer.scss';
 const Footer = (): JSX.Element => (
   <footer className="footer">
     <section id="contacts" className="contact__links">
-      <h2 className="links__header">Способы связаться</h2>
+      <h2 className="links__header">Ссылки на всякое</h2>
       <div className="links__container">
         <Link
           linkHref="https://spb.hh.ru/resume/5872d277ff062edf220039ed1f67657738596a"
