@@ -72,6 +72,13 @@
   }
 
   .home__technology {
+    display: flex;
 
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
   }
 }

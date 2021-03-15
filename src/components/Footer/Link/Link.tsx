@@ -1,12 +1,5 @@
 import './Link.scss';
-
-interface ILink {
-  linkHref: string;
-  linkTarget: string;
-  linkSrc: string;
-  linkAlt: string;
-  linkCaption: string;
-}
+import { ILink } from '../../../interfaces/ILink';
 
 const Link = ({
   linkHref,
