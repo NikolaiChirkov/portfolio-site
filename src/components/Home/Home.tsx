@@ -8,7 +8,7 @@ const Home = (): JSX.Element => (
       <h3 className="intr__subtitle">JavaScript разработчик</h3>
     </section>
     <section id="overview" className="home__overview">
-      <h2 className="overview__header">Проекты, в которых учавствовал</h2>
+      <h2 className="overview__header">Проекты</h2>
       <div className="overview__container">
         <ProjectCard
           caption="specmax.ru"
@@ -20,9 +20,6 @@ const Home = (): JSX.Element => (
           imgSrc="https://imgur.com/1LKkSjMl.png"
           lnk="https://glarimac.ru/"
         />
-      </div>
-      <h2 className="overview__header">Личные проекты</h2>
-      <div className="overview__container">
         <ProjectCard
           caption="n-chirkov.netlify.app"
           imgSrc="https://imgur.com/1SdipZxl.png"

@@ -44,7 +44,7 @@ const types = {
       "no-implied-eval": types.WARN,
       "no-invalid-this": types.WARN,
       "no-iterator": types.WARN,
-      "no-multi-spaces": types.ERROR,
+      "no-multi-spaces": types.WARN,
       "no-new": types.WARN,
       "no-new-func": types.ERROR,
       "no-new-wrappers": types.ERROR,
