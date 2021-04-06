@@ -1,13 +1,13 @@
 import { useModalContext } from '../../context/ModalContext';
+import { modalEntity } from '../../interfaces/IModalContext';
 import { hideModal } from '../../reducer/reducerShortcut';
 import IconClose from '../../resources/svg/i-close.svg';
 import './ProjectModal.scss';
 
 const ProjectModal = (): JSX.Element => {
   const { modalState, modalDispatch } = useModalContext();
-
-  const stack =
-    'Стэк: EJS + SCSS + JavaScript(JS + ES6) + TypeScript(TS) + Babel + Webpack';
+  const { img, name, type, stack, linkHref, linkName, description } = modalState
+    .data?.modal as modalEntity;
 
   return (
     <section className="project-modal">
@@ -17,43 +17,32 @@ const ProjectModal = (): JSX.Element => {
             className="modal__close-icon"
             src={IconClose}
             alt="close modal icon"
-            onClick={() => modalDispatch(hideModal())}
+            onClick={() => modalDispatch(hideModal)}
           />
         </div>
         <div className="modal__overview">
           <a href="https://specmax.ru/" target="_blank">
-            <img
-              className="modal__overview-img"
-              src="https://imgur.com/bwVBrnql.png"
-              alt=""
-            />
+            <img className="modal__overview-img" src={img} alt="" />
           </a>
           <div className="modal__overview-info">
-            <h2 className="overview-info__text">
-              Название проекта: specmax.ru
-            </h2>
+            <h2 className="overview-info__text">Название проекта: {name}</h2>
             <h3 className="overview-info__text odd-line">
-              Тип проекта: Коммерческий
+              Тип проекта: {type}
             </h3>
             <p className="overview-info__text">{stack}</p>
             <p className="overview-info__text odd-line">
               Ссылка на сайт:
               <a
                 className="overview-info__text-a"
-                href="https://specmax.ru/"
+                href={linkHref}
                 target="_blank"
               >
-                specmax.ru
+                {linkName}
               </a>
             </p>
           </div>
         </div>
-        <div className="modal__description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aut
-          repudiandae error ad? Reprehenderit aperiam dolorum corrupti cum ex
-          veniam quia deleniti fugit architecto, omnis temporibus suscipit
-          recusandae quis exercitationem.
-        </div>
+        <div className="modal__description">{description}</div>
       </div>
     </section>
   );

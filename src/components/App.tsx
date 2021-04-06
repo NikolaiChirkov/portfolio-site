@@ -13,7 +13,7 @@ const App = (): JSX.Element => {
 
   document.addEventListener('keydown', (e) => {
     if (e.keyCode === 27) {
-      modalDispatch(hideModal());
+      modalDispatch(hideModal);
     }
   });
 

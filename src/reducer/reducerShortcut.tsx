@@ -1,9 +1,11 @@
-export const hideModal = (): any => ({
+import { TModalAction } from '../interfaces/IModalContext';
+
+export const hideModal: TModalAction = {
   type: 'CHANGE_MODALVISIBLE',
   payload: { modalVisible: false },
-});
+};
 
-export const showModal = (): any => ({
+export const showModal: TModalAction = {
   type: 'CHANGE_MODALVISIBLE',
   payload: { modalVisible: true },
-});
+};
