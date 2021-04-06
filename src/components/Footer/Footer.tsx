@@ -29,14 +29,14 @@ const Footer = (): JSX.Element => (
           linkTarget="_self"
           linkSrc={PhoneLogo}
           linkAlt="phone logo"
-          linkCaption="Телефон"
+          linkCaption="+7(931)-333-14-17"
         />
         <Link
           linkHref="mail:nikolyachirkov@yandex.ru"
           linkTarget="_blank"
           linkSrc={MailLogo}
           linkAlt="mail logo"
-          linkCaption="Почта"
+          linkCaption="nchirkov@risensun.agency"
         />
       </div>
     </section>
