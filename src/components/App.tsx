@@ -5,7 +5,7 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import ProjectModal from './ProjectModal/ProjectModal';
-import './reset.scss';
+import '../resources/scss/reset.scss';
 import './App.scss';
 
 const App = (): JSX.Element => {
