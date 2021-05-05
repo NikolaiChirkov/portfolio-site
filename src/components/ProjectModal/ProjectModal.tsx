@@ -2,6 +2,7 @@ import { useModalContext } from '../../context/ModalContext';
 import { modalEntity } from '../../interfaces/IModalContext';
 import { hideModal } from '../../reducer/reducerShortcut';
 import IconClose from '../../resources/svg/i-close.svg';
+import ModalOverview from './ModalOverview/ModalOverview';
 import './ProjectModal.scss';
 
 const ProjectModal = (): JSX.Element => {
@@ -20,28 +21,14 @@ const ProjectModal = (): JSX.Element => {
             onClick={() => modalDispatch(hideModal)}
           />
         </div>
-        <div className="modal__overview">
-          <a href="https://specmax.ru/" target="_blank">
-            <img className="modal__overview-img" src={img} alt="" />
-          </a>
-          <div className="modal__overview-info">
-            <h2 className="overview-info__text">Название проекта: {name}</h2>
-            <h3 className="overview-info__text odd-line">
-              Тип проекта: {type}
-            </h3>
-            <p className="overview-info__text">{stack}</p>
-            <p className="overview-info__text odd-line">
-              Ссылка на сайт:
-              <a
-                className="overview-info__text-a"
-                href={linkHref}
-                target="_blank"
-              >
-                {linkName}
-              </a>
-            </p>
-          </div>
-        </div>
+        <ModalOverview
+          img={img}
+          name={name}
+          type={type}
+          stack={stack}
+          linkHref={linkHref}
+          linkName={linkName}
+        />
         <div className="modal__description">{description}</div>
       </div>
     </section>

@@ -16,13 +16,15 @@
   }
 
   .link__caption {
-    padding-left: 0.3em;
+    margin-left: 0.3em;
 
     font-size: 1.2em;
     color: black;
+
+    border-bottom: 1px solid black;
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 844px) {
     margin: 0 1em;
 
     width: auto;
