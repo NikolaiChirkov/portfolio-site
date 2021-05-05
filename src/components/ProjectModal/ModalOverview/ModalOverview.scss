@@ -30,6 +30,8 @@
       border-bottom: 1px dashed black;
 
       .overview-info__text-a {
+        padding-left: 5px;
+
         color: map-get($c-bg, gradient-1);
 
         text-decoration: underline;
