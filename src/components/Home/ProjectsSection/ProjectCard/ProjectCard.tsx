@@ -1,6 +1,6 @@
-import { useModalContext } from '../../../context/ModalContext';
-import { IProjectCard } from '../../../interfaces/IProjectCard';
-import { showModal } from '../../../reducer/reducerShortcut';
+import { useModalContext } from '../../../../context/ModalContext';
+import { IProjectCard } from '../../../../interfaces/IProjectCard';
+import { showModal } from '../../../../reducer/reducerShortcut';
 import './ProjectCard.scss';
 
 const ProjectCard = ({

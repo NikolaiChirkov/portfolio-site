@@ -1,0 +1,28 @@
+@import '../../../resources/scss/Variables.scss';
+
+
+.home__intr {
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background: linear-gradient(to right top, #155484, #0e3858);
+
+  color: map-get($c-t, wh);
+
+  .intr__title {
+    font-size: 2em;
+  }
+
+  .intr__subtitle {
+    padding-top: 15px;
+
+    font-size: 1.25em;
+    font-style: italic;
+  }
+}

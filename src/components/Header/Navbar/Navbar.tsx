@@ -8,7 +8,7 @@ const Navbar = (): JSX.Element => (
       </a>
     </li>
     <li className="navbar__link">
-      <a className="navbar__link-a" href="#overview">
+      <a className="navbar__link-a" href="#projects">
         Проекты
       </a>
     </li>

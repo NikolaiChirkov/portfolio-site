@@ -1,0 +1,39 @@
+@import '../../../resources/scss/Variables.scss';
+
+.home__projects {
+  display: flex;
+
+  flex-flow: column nowrap;
+
+  align-items: center;
+
+  min-height: auto;
+
+  margin: 5em 0;
+
+  .projects__header {
+    display: flex;
+
+    flex-flow: row nowrap;
+
+    padding: 0 10px 10px 10px;
+
+    border-bottom: 2px solid map-get($c-t, bla);
+
+    font-size: 2em;
+    color: map-get($c-t, bl);
+  }
+
+  .projects__container {
+    display: flex;
+
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+
+    width: 100%;
+    height: auto;
+
+    margin: 3em 0;
+  }
+}
